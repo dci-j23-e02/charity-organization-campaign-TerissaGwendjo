@@ -10,63 +10,63 @@ The application should be designed in a way that it can handle a large number of
 The assignment is divided into three milestones: Bronze Achievement, Silver Achievement, and Golden Achievement. Each milestone has its own set of tasks and deadline.
 
 ### Bronze Achievement (Deadline: 2023/11/14)
-1. **Donor Class:** Create a `Donor` class with attributes like name, contact number, and email address. This class will represent a donor in the system. Each donor should have a unique ID. The class should have methods to get and set the values of these attributes.
+1. **DonorClass Class:** Create a `DonorClass` class with attributes like name, contact number, and email address. This class will represent a donor in the system. Each donor should have a unique ID. The class should have methods to get and set the values of these attributes.
 
 **Example:**:
-   *Input:* Add Donor: Name: John Doe, Contact Number: 1234567890, Email: johndoe@gmail.com
-   *Output:* Donor added successfully.
+   *Input:* Add DonorClass: Name: John Doe, Contact Number: 1234567890, Email: johndoe@gmail.com
+   *Output:* DonorClass added successfully.
 
-3. **Volunteer Class:** Create a `Volunteer` class with attributes like name, contact number, and email address. This class will represent a volunteer in the system. Each volunteer should have a unique ID. The class should have methods to get and set the values of these attributes.
+3. **VolunteerClass Class:** Create a `VolunteerClass` class with attributes like name, contact number, and email address. This class will represent a volunteer in the system. Each volunteer should have a unique ID. The class should have methods to get and set the values of these attributes.
 
 **Example:**
-   *Input:* Add Volunteer: Name: Jane Smith, Contact Number: 0987654321, Email: janesmith@gmail.com
-   *Output:* Volunteer added successfully.
+   *Input:* Add VolunteerClass: Name: Jane Smith, Contact Number: 0987654321, Email: janesmith@gmail.com
+   *Output:* VolunteerClass added successfully.
 
-4. **Project Class:** Create a `Project` class with attributes like project name, project description, target amount, and assigned volunteers. This class will represent a project in the system. Each project should have a unique name. The class should have methods to get and set the values of these attributes.
+4. **ProjectClass Class:** Create a `ProjectClass` class with attributes like project name, project description, target amount, and assigned volunteers. This class will represent a project in the system. Each project should have a unique name. The class should have methods to get and set the values of these attributes.
 
  **Example:** 
-   *Input:* Add Project: Name: Clean Water Project, Description: Providing clean water to remote areas, Target Amount: $50000
-   *Output:* Project added successfully.
+   *Input:* Add ProjectClass: Name: Clean Water ProjectClass, Description: Providing clean water to remote areas, Target Amount: $50000
+   *Output:* ProjectClass added successfully.
 
-5. **Donation Class:** Create a `Donation` class with attributes like the donor's ID, the amount donated, the date of donation, and the project name. This class will represent a donation in the system. Each donation should have a unique ID. The class should have methods to get and set the values of these attributes.
+5. **DonationClass Class:** Create a `DonationClass` class with attributes like the donor's ID, the amount donated, the date of donation, and the project name. This class will represent a donation in the system. Each donation should have a unique ID. The class should have methods to get and set the values of these attributes.
 
 **Example:** 
-   *Input:* Add Donation: Donor ID: 1, Amount: $1000, Date: 2023/11/01, Project Name: Clean Water Project
-   *Output:* Donation added successfully.
+   *Input:* Add DonationClass: DonorClass ID: 1, Amount: $1000, Date: 2023/11/01, ProjectClass Name: Clean Water ProjectClass
+   *Output:* DonationClass added successfully.
 
 ### Silver Achievement (Deadline: 2023/11/16)
 5. **Donors:** Create a `HashMap` to store the details of the donors with the donor's ID as the key and the donor object as the value. This will allow you to quickly access donor details using the donor's ID.
 
 **Example:** 
-   *Input:* Get Donor: ID: 1
-   *Output:* Donor Details: Name: John Doe, Contact Number: 1234567890, Email: johndoe@gmail.com
+   *Input:* Get DonorClass: ID: 1
+   *Output:* DonorClass Details: Name: John Doe, Contact Number: 1234567890, Email: johndoe@gmail.com
 
 
 6. **Volunteers:** Create a `HashSet` to store the details of the volunteers. This will allow you to quickly access volunteer details and ensure that there are no duplicate volunteers.
 
 **Example:** 
-   *Input:* Get Volunteer: ID: 1
-   *Output:* Volunteer Details: Name: Jane Smith, Contact Number: 0987654321, Email: janesmith@gmail.com
+   *Input:* Get VolunteerClass: ID: 1
+   *Output:* VolunteerClass Details: Name: Jane Smith, Contact Number: 0987654321, Email: janesmith@gmail.com
 
 7. **Projects:** Create a `TreeMap` to store the details of the projects with the project's name as the key and the project object as the value. This will allow you to quickly access project details using the project's name and keep the projects sorted.
 
 **Example:** 
-   *Input:* Get Project: Name: Clean Water Project
-   *Output:* Project Details: Description: Providing clean water to remote areas, Target Amount: $50000
+   *Input:* Get ProjectClass: Name: Clean Water ProjectClass
+   *Output:* ProjectClass Details: Description: Providing clean water to remote areas, Target Amount: $50000
 
 8. **Donations:** Create a `LinkedList` to store the details of the donations. This will allow you to easily add and remove donations.
 
  **Example:** 
-   *Input:* Get Donation: ID: 1
-   *Output:* Donation Details: Donor ID: 1, Amount: $1000, Date: 2023/11/01, Project Name: Clean Water Project
+   *Input:* Get DonationClass: ID: 1
+   *Output:* DonationClass Details: DonorClass ID: 1, Amount: $1000, Date: 2023/11/01, ProjectClass Name: Clean Water ProjectClass
 
 
 ### Golden Achievement (Deadline: 2023/11/20)
 9. **Methods for Managing Details:** Implement methods to add, update, and delete donors, volunteers, projects, and donations. These methods will allow you to manage the details of the donors, volunteers, projects, and donations.
 
 **Example:** 
-   *Input:* Update Donor: ID: 1, New Contact Number: 1111111111
-   *Output:* Donor updated successfully.
+   *Input:* Update DonorClass: ID: 1, New Contact Number: 1111111111
+   *Output:* DonorClass updated successfully.
 
 10. **Methods for Viewing Details:** Implement methods to view all donors, volunteers, projects, and donations. These methods will allow you to display the details of the donors, volunteers, projects, and donations.
 
@@ -81,48 +81,48 @@ The assignment is divided into three milestones: Bronze Achievement, Silver Achi
    *Input:* Calculate Total Funds
    *Output:* Total funds raised: $1000
 
-12. **Method for Calculating Project-Specific Funds:** Implement a method to calculate the total funds raised for a specific project. This method will allow you to calculate the total amount of donations for a specific project.
+12. **Method for Calculating ProjectClass-Specific Funds:** Implement a method to calculate the total funds raised for a specific project. This method will allow you to calculate the total amount of donations for a specific project.
 
  **Example:** 
-   *Input:* Calculate Funds for Project: Clean Water Project
-   *Output:* Total funds raised for Clean Water Project: $1000
+   *Input:* Calculate Funds for ProjectClass: Clean Water ProjectClass
+   *Output:* Total funds raised for Clean Water ProjectClass: $1000
 
 13. **Method for Assigning Volunteers:** Implement a method to assign volunteers to a specific project. This method will allow you to assign volunteers to a project.
 
 **Example:** 
-   *Input:* Assign Volunteer: Volunteer ID: 1, Project Name: Clean Water Project
-   *Output:* Volunteer assigned successfully.
+   *Input:* Assign VolunteerClass: VolunteerClass ID: 1, ProjectClass Name: Clean Water ProjectClass
+   *Output:* VolunteerClass assigned successfully.
 
-14. **Method for Finding Top Donor:** Implement a method to find the top donor (the one who has donated the most). This method will allow you to identify the donor who has made the highest total donations.
-
-**Example:** 
-   *Input:* Find Top Donor
-   *Output:* Top Donor: John Doe
-
-
-15. **Method for Finding Most Active Volunteer:** Implement a method to find the most active volunteer (the one who is assigned to the most projects). This method will allow you to identify the volunteer who is assigned to the most number of projects.
+14. **Method for Finding Top DonorClass:** Implement a method to find the top donor (the one who has donated the most). This method will allow you to identify the donor who has made the highest total donations.
 
 **Example:** 
-   *Input:* Find Most Active Volunteer
-   *Output:* Most Active Volunteer: Jane Smith
+   *Input:* Find Top DonorClass
+   *Output:* Top DonorClass: John Doe
 
-16. **Method for Finding Most Funded Project:** Implement a method to find the project that has received the most donations. This method will allow you to identify the project that has received the highest total donations.
 
-**Example:** 
-   *Input:* Find Most Funded Project
-   *Output:* Most Funded Project: Clean Water Project
-
-17. **Method for Finding Project with Most Volunteers:** Implement a method to find the project that has the most volunteers assigned. This method will allow you to identify the project that has the most number of volunteers assigned.
+15. **Method for Finding Most Active VolunteerClass:** Implement a method to find the most active volunteer (the one who is assigned to the most projects). This method will allow you to identify the volunteer who is assigned to the most number of projects.
 
 **Example:** 
-   *Input:* Find Project with Most Volunteers
-   *Output:* Project with Most Volunteers: Clean Water Project
+   *Input:* Find Most Active VolunteerClass
+   *Output:* Most Active VolunteerClass: Jane Smith
 
-18. **Method for Calculating Average Donation:** Implement a method to find the average donation amount. This method will allow you to calculate the average amount of donations.
+16. **Method for Finding Most Funded ProjectClass:** Implement a method to find the project that has received the most donations. This method will allow you to identify the project that has received the highest total donations.
 
 **Example:** 
-   *Input:* Calculate Average Donation
-   *Output:* Average Donation: $1000
+   *Input:* Find Most Funded ProjectClass
+   *Output:* Most Funded ProjectClass: Clean Water ProjectClass
+
+17. **Method for Finding ProjectClass with Most Volunteers:** Implement a method to find the project that has the most volunteers assigned. This method will allow you to identify the project that has the most number of volunteers assigned.
+
+**Example:** 
+   *Input:* Find ProjectClass with Most Volunteers
+   *Output:* ProjectClass with Most Volunteers: Clean Water ProjectClass
+
+18. **Method for Calculating Average DonationClass:** Implement a method to find the average donation amount. This method will allow you to calculate the average amount of donations.
+
+**Example:** 
+   *Input:* Calculate Average DonationClass
+   *Output:* Average DonationClass: $1000
 
 19. **Method for Calculating Total Numbers:** Implement a method to find the total number of donors, volunteers, projects, and donations. This method will allow you to calculate the total number of donors, volunteers, projects, and donations.
 
@@ -139,8 +139,8 @@ The assignment is divided into three milestones: Bronze Achievement, Silver Achi
 **Bonus (First Class Honors):** 
 - Implement a method to search for a donor, volunteer, project, or donation by their respective ID or name.
 **Example:** 
-*Input:* Search for Donor: Name: John Doe
-*Output:* Donor Details: Name: John Doe, Contact Number: 1234567890, Email: johndoe@gmail.com
+*Input:* Search for DonorClass: Name: John Doe
+*Output:* DonorClass Details: Name: John Doe, Contact Number: 1234567890, Email: johndoe@gmail.com
 
 - Implement a method to export the details of the donors, volunteers, projects, and donations to a CSV file.
 **Example:** 
@@ -193,9 +193,9 @@ The assignment is divided into three milestones: Bronze Achievement, Silver Achi
    **Example:**
    ```java
    TreeMap<String, String> map = new TreeMap<String, String>();
-   map.put("Clean Water Project", "Providing clean water to remote areas");
-   map.put("Education Project", "Providing education to underprivileged children");
-   System.out.println("Project details for Clean Water Project: " + map.get("Clean Water Project"));
+   map.put("Clean Water ProjectClass", "Providing clean water to remote areas");
+   map.put("Education ProjectClass", "Providing education to underprivileged children");
+   System.out.println("ProjectClass details for Clean Water ProjectClass: " + map.get("Clean Water ProjectClass"));
    ```
    **Use Case:** In this assignment, TreeMap is used to store the details of the projects with the project's name as the key and the project object as the value. This allows quick access to project details using the project's name and keeps the projects sorted.
 
