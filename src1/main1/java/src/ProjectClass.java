@@ -7,7 +7,8 @@ public class ProjectClass {
     private String projectName;
     private String projectDescription;
     private double targetAmount;
-    private List<VolunteerClass> assignedVolunteers;
+    private List<VolunteerClass> assignedVolunteers; //List of assigned Volunteers taking the Volunteer Class as an argument
+
 
     public ProjectClass(String projectName, String projectDescription, double targetAmount) {
         this.id = idCounter++;

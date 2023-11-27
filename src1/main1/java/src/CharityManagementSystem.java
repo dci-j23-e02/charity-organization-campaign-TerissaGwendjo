@@ -181,6 +181,7 @@ public class CharityManagementSystem {
     //GOLDEN ACHIEVEMENT
     while (true) {
         printMenu();
+        Scanner scanner;
         int choice = scanner.nextInt();
         scanner.nextLine(); // Consume the newline character
 
